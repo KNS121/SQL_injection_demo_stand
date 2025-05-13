@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SQL Injection Demo</title>
+</head>
+<body>
+    <h1>SQL Injection Demonstration</h1>
+    <div class="container">
+        <div class="vulnerable">
+            <h2>Vulnerable Login</h2>
+            <form method="POST" action="/vulner-login">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div class="secure">
+            <h2>Secure Login</h2>
+            <form method="POST" action="/secure-login">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <h3>Example   ^_^   :</h3>
+    <pre>admin' --</pre>
+    <pre>' OR 1=1;--</pre>
+    <pre>'; DROP TABLE users;--</pre>
+</body>
+</html>
