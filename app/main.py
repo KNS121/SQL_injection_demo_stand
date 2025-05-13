@@ -35,8 +35,8 @@ def init_db():
 
     with SessionLocal() as db:
         db.add_all([
-            User(username='admin', password='admin', is_admin=True),
-            User(username='user1', password='user1'),
+            User(username='user1', password='user1', is_admin=True),
+            User(username='admin', password='admin'),
             User(username='user2', password='user2')
         ])
         db.commit()

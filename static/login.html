@@ -4,7 +4,7 @@
     <title>SQL Injection Demo</title>
 </head>
 <body>
-    <h1>SQL Injection Demonstration</h1>
+    <h1>SQL Injection Demo</h1>
     <div class="container">
         <div class="vulnerable">
             <h2>Vulnerable Login</h2>
@@ -26,8 +26,8 @@
     </div>
 
     <h3>Example   ^_^   :</h3>
-    <pre>admin' --</pre>
-    <pre>' OR 1=1;--</pre>
-    <pre>'; DROP TABLE users;--</pre>
+    <pre>autorization by user. login: admin' -- password: (any password :D)</pre>
+    <pre>get 1st user in db: ' OR 1=1;--</pre>
+    <pre>fake autorization: ' UNION SELECT 4, 'fake_admin', 'fake_admin', true -- </pre>
 </body>
 </html>
